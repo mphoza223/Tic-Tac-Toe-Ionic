@@ -1,0 +1,29 @@
+<ion-view name="content">
+<div class="bar bar-header bar-clear" style="background-color: #12181B;">
+     <button class="button button-icon" ng-click="openSettings()"><i class="ion-android-settings"></i></button>
+  <h1 class="title"></h1>
+   <!-- <button class="button button-icon" ng-click="appShutdown()"><i class="ion-android-close"></i></button> -->
+</div>
+<ion-content class="background has-header" scroll="false" style="padding: 0px;">   
+        <section class="dashboard padding light">
+            <span>Game mode:&nbsp;&nbsp;{{gameMode_msg}}</span><br>
+            <span>Difficulty:&nbsp;&nbsp;{{difficulty_msg}}</span>
+        </section><br>
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+        <section class="display announcer hide"></section>
+        <section class="controls row">
+            <button class="button button-royal col col-50" id="reset">&nbsp;&nbsp;Reset&nbsp;&nbsp;</button>
+        </section>
+ </ion-content>
+</ion-view>
+

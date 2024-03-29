@@ -1,0 +1,62 @@
+<ion-modal-view name="content">
+<div class="bar bar-header bar-clear" style="background-color: #12181B;">
+  <button class="button button-icon light" ng-click="settingsModal.hide()">Done</button>
+  <h1 class="title"></h1>
+</div>
+<ion-content class="has-header settingsBack" style="padding: 4px;" overflow-scroll="true">    
+<div class="list">
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Play against
+    </div>
+    <select  ng-model="playAs" ng-change="setGameMode(playAs)">
+      <option value="htp">Phone</option>
+      <option value="hth">Human</option>
+    </select>
+  </label>
+
+</div>
+<div class="list">
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Difficulty
+    </div>
+    <select ng-model="difficulty" ng-change="setDifficulty(difficulty)">
+      <option value="easy">Easy</option>
+      <option value="hard">Hard</option>
+    </select>
+  </label>
+</div>
+<div class="padding">
+<h3 class="light">Instructions</h3>
+<p class="light">
+  1. The game is played on a grid that's 3 squares by 3 squares.<br><br>
+  2. You are X , your friend (or the computer in this case) is O . Players take turns putting their marks in empty squares.<br><br>
+  3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.<br><br>
+  4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
+</p>
+<p class="assertive">Get in touch: &nbsp;&nbsp;<span class="balanced">mphothedev@gmail.com</span></p>
+</div>
+
+ </ion-content>
+</ion-modal-view>
+
+<style type="text/css">
+
+  .settingsBack{
+    background-color: #12181B;
+}
+
+ #areaContainer{
+    /*background-image: url('img/grassField (1).jpg');*/
+
+
+  }
+
+  .item{
+    padding: 5px;
+  }
+
+</style>
